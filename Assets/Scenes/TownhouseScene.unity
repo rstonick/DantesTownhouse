@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260f2b60a483d4912a0c9e55fd2d1ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spinCoin: 0
 --- !u!114 &404320828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
-  m_LocalPosition: {x: 137.5, y: 9.8, z: 157.2}
+  m_LocalPosition: {x: 4.2, y: 2.8, z: -5.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -532,7 +533,7 @@ Transform:
   m_GameObject: {fileID: 3896066263546994461}
   m_LocalRotation: {x: 0.40957603, y: 0.28678823, z: 0.7094065, w: 0.49673176}
   m_LocalPosition: {x: 0, y: 0.100000024, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404320824}
