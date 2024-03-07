@@ -107,6 +107,8 @@ public class RootMotionControlScript : MonoBehaviour
             // This makes certain that the action is handled!
             _inputActionFired = _inputActionFired || cinput.Action;
             _inputJumpFired = _inputJumpFired || cinput.Jump;
+            bool isGrounded = IsGrounded || CharacterCommon.CheckGroundNear(this.transform.position, jumpableGroundNormalMaxAngle, 0.1f, 1f, out closeToJumpableGround);
+
         }
     }
 
@@ -161,20 +163,18 @@ public class RootMotionControlScript : MonoBehaviour
 
         if (_inputJumpFired)
         {
-            
+
             if (isGrounded)
             {
-                Vector3 horizontalVelocity = new Vector3(_inputForward, 0f, 0f);
-                anim.SetFloat("velx", 4f);
-                anim.SetFloat("vely", 4f);
+
                 Debug.Log(transform.forward);
-                rbody.velocity = new Vector3(_inputForward*2, 5, 0);
+                rbody.velocity = new Vector3(0, 5, 0);
                 rbody.AddForce(rbody.velocity * jumpForce, ForceMode.Impulse);
                 isGrounded = false;
                 anim.SetBool("JumpPressed", true);
                 _inputJumpFired = false;
                 _jumping = true;
-                
+
             }
 
         }
