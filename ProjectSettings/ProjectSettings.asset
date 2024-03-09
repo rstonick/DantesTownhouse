@@ -720,11 +720,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: a6ed3009-02c6-49ce-8a9f-76fcbe99cb1c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: dantes-townhouse
+  organizationId: evabai
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
