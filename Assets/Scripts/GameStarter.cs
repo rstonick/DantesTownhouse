@@ -19,7 +19,7 @@ public class GameStarter : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("floor1");
+        SceneManager.LoadScene("Floor1");
         Time.timeScale = 1f;
     }
 }

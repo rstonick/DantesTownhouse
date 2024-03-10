@@ -1692,6 +1692,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5291411615939232193, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
+      propertyPath: jumpForce
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8489889323528056850, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
       propertyPath: m_Name
       value: Modular Fantasy Character Variant
@@ -4545,11 +4549,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: speed
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: maxHeight
-      value: 80
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1667248370594977311, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: m_RootOrder
