@@ -12,9 +12,9 @@ public class CollectableCoin : MonoBehaviour
 
             if (cc != null)
             {
-                // EventManager.TriggerEvent<BombBounceEvent, Vector3>(c.transform.position);
                 Destroy(this.gameObject);
                 cc.ReceiveCoin();
+                cc.SetCountText();
             }
         }
     }

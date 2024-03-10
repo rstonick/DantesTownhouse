@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -475,6 +479,141 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74804871}
   m_Mesh: {fileID: 4300000, guid: 69e570a331da80d4f9bb60a69b974919, type: 3}
+--- !u!1 &75923015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 75923016}
+  - component: {fileID: 75923018}
+  - component: {fileID: 75923017}
+  m_Layer: 5
+  m_Name: Orb Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &75923016
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75923015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1157168076}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -324, y: 188}
+  m_SizeDelta: {x: 300, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &75923017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75923015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Orb Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22
+  m_fontSizeBase: 22
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &75923018
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75923015}
+  m_CullTransparentMesh: 1
 --- !u!1 &79019994
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +736,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79019994}
   m_CullTransparentMesh: 1
+--- !u!1 &87059010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 87059012}
+  - component: {fileID: 87059011}
+  m_Layer: 0
+  m_Name: Soundtrack Floor2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &87059011
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87059010}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 523f5e4fc765649ed8e008739ddc9c00, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &87059012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87059010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &94262565
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +930,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95928292
 GameObject:
@@ -868,7 +1135,7 @@ Transform:
   - {fileID: 808575370}
   - {fileID: 630764588}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &109104511
 PrefabInstance:
@@ -924,6 +1191,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -990,6 +1261,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1275,6 +1550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1440,7 +1719,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: 5.914, z: 0}
 --- !u!1 &233423226
 GameObject:
@@ -1477,7 +1756,7 @@ Transform:
   - {fileID: 1589320700}
   - {fileID: 1369603645}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &264825181 stripped
 Transform:
@@ -1586,7 +1865,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -122.90015, y: -213.19415, z: -176.82574, w: 0}
+  m_margin: {x: -122.90015, y: -213.19415, z: -176.82574, w: 181.89236}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1617,7 +1896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -293}
+  m_AnchoredPosition: {x: 195, y: -280}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &298703090
@@ -1654,7 +1933,7 @@ Transform:
   - {fileID: 1900667716}
   - {fileID: 1763906163}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404320823
 GameObject:
@@ -2022,6 +2301,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2450,6 +2733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2515,6 +2802,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2784,6 +3075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2849,6 +3144,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3046,6 +3345,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3352,6 +3655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3459,7 +3766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380532002813403666, guid: 083a7f82141d11d469c80d7814fe1fe5, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3380532002813403666, guid: 083a7f82141d11d469c80d7814fe1fe5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3590,6 +3897,141 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697807181}
   m_Mesh: {fileID: 4300000, guid: 69e570a331da80d4f9bb60a69b974919, type: 3}
+--- !u!1 &711295285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711295286}
+  - component: {fileID: 711295288}
+  - component: {fileID: 711295287}
+  m_Layer: 5
+  m_Name: CountText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &711295286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711295285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1157168076}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -324, y: 224}
+  m_SizeDelta: {x: 300, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &711295287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711295285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Count Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22
+  m_fontSizeBase: 22
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &711295288
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711295285}
+  m_CullTransparentMesh: 1
 --- !u!1001 &716106395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3644,6 +4086,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3710,6 +4156,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3782,6 +4232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3847,6 +4301,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4162,6 +4620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4190,7 +4652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a11cfd6742e4b10991b34ac9b4abaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasCoin: 0
+  countText: {fileID: 711295287}
+  orbText: {fileID: 75923017}
 --- !u!1 &850778344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4226,7 +4689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119, y: -4}
+  m_AnchoredPosition: {x: 124, y: -4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850778346
@@ -4312,7 +4775,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -242.0961, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4455,6 +4918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4502,7 +4969,7 @@ Transform:
   - {fileID: 2017954615}
   - {fileID: 1606895098}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &884612156
 GameObject:
@@ -4656,6 +5123,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4847,6 +5318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4974,6 +5449,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5272,8 +5751,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1731387209}
+  - {fileID: 711295286}
+  - {fileID: 75923016}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5334,6 +5815,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5401,6 +5886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5456,7 +5945,7 @@ Transform:
   - {fileID: 1708070592}
   - {fileID: 1148553833}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193510900
 GameObject:
@@ -5701,7 +6190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dce3900490042f2bf77ce9ba1fafe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContent: Hello, this is a sample dialogue. Press Enter to close.
+  dialogueContent: Orbs are $40 each to buy. You can sell them to me for $20 each.
 --- !u!65 &1264387553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5713,7 +6202,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4633789, y: 0.6275253, z: 0.8931885}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.31863022, z: 0}
 --- !u!1 &1273439392
 GameObject:
@@ -5750,7 +6239,7 @@ Transform:
   - {fileID: 1410116271}
   - {fileID: 1264387548}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1299367965
 PrefabInstance:
@@ -5967,7 +6456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dce3900490042f2bf77ce9ba1fafe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContent: Hello, this is a sample dialogue. Press Enter to close.
+  dialogueContent: Orbs are $40 each to buy. You can sell them to me for $20 each.
 --- !u!65 &1410116276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5979,7 +6468,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4633793, y: 0.6275253, z: 0.8931887}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.31863022, z: 0}
 --- !u!1001 &1419435144
 PrefabInstance:
@@ -6035,6 +6524,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6101,6 +6594,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6223,7 +6720,7 @@ RectTransform:
   m_Children:
   - {fileID: 275574578}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6409,6 +6906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6474,6 +6975,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6727,6 +7232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6908,7 +7417,7 @@ Transform:
   - {fileID: 1985008964}
   - {fileID: 1470670448}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1606895098 stripped
 Transform:
@@ -7382,6 +7891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7432,8 +7945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -159}
-  m_SizeDelta: {x: 500, y: 120}
+  m_AnchoredPosition: {x: -4, y: -182}
+  m_SizeDelta: {x: 550, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731387210
 MonoBehaviour:
@@ -7639,7 +8152,7 @@ Transform:
   - {fileID: 414500465}
   - {fileID: 1308771799}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1761967320
 PrefabInstance:
@@ -7820,6 +8333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7843,13 +8360,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5165516507699183072, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5165516507699183075, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 5165516507699183087, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5165516507699183087, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7893,11 +8414,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7319492759676766260, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
       propertyPath: targetScene
-      value: Floor4
+      value: Floor3- AI Fire
       objectReference: {fileID: 0}
     - target: {fileID: 7319492759676766260, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
       propertyPath: floorComplete
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bccb69316c53415fac6c7569b7eed07, type: 3}
@@ -8080,6 +8601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8145,6 +8670,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8430,6 +8959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8476,7 +9009,7 @@ Transform:
   - {fileID: 568191974}
   - {fileID: 758296683}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1985008963
 PrefabInstance:
@@ -8751,7 +9284,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 40, y: -46.383, z: 0}
 --- !u!1001 &2016311799
 PrefabInstance:
@@ -8875,6 +9408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8903,7 +9440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dce3900490042f2bf77ce9ba1fafe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContent: Hello, this is a sample dialogue. Press Enter to close.
+  dialogueContent: Orbs are $40 each to buy. You can sell them to me for $20 each.
 --- !u!65 &2076635735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8915,7 +9452,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4633793, y: 0.6275253, z: 0.8931887}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00000011920929, y: 0.31863022, z: 0.00000047683716}
 --- !u!1001 &2095196477
 PrefabInstance:
@@ -8972,6 +9509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9013,7 +9554,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2105108970
 MonoBehaviour:
@@ -9027,7 +9568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1da50ab6333f43d59be3fb2ab6f2a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 1157168072}
+  dialogueBox: {fileID: 1731387208}
   dialogueText: {fileID: 850778346}
 --- !u!1001 &2119543722
 PrefabInstance:
@@ -9083,6 +9624,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9185,9 +9730,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 907565090, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
+      propertyPath: m_Mass
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 4866557775789130241, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4866557775789130241, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9228,6 +9777,10 @@ PrefabInstance:
     - target: {fileID: 4866557775789130241, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291411615939232193, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
+      propertyPath: jumpForce
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8489889323528056850, guid: c9351c122f9dbcd4d97e763cdd6e5b61, type: 3}
       propertyPath: m_Name
@@ -9298,6 +9851,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 5372489389721508119, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14555,7 +15112,7 @@ Transform:
   - {fileID: 1891576471930843783}
   - {fileID: 1891576470397468630}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4478713711292670166
 GameObject:

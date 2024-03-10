@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GameStartScene.unity
+    guid: 579600374874a4b11a01b23c199a6208
+  - enabled: 1
     path: Assets/Scenes/Floor1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: 414d5f1bc288db04dbd80250b089de29
   - enabled: 1
     path: Assets/Scenes/Floor2.unity
     guid: 1080a9d61a1ec40d495fbfd80fef0e05
+  - enabled: 1
+    path: Assets/Scenes/Floor3- AI Fire.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Floor4.unity
+    guid: 94bc67f13dfd54d4080dbbe581c9b0eb
   m_configObjects: {}
