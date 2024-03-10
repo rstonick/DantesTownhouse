@@ -6,7 +6,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
-    public GameObject dialogueCanvas;
+    public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
     private bool isDialogueActive = false;
 
@@ -17,20 +17,20 @@ public class DialogueManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        dialogueCanvas.SetActive(false);
+        dialogueBox.SetActive(false);
     }
 
 
     public void StartDialogue(string dialogue)
     {
-        dialogueCanvas.SetActive(true);
+        dialogueBox.SetActive(true);
         dialogueText.text = dialogue;
         isDialogueActive = true;
     }
 
     public void EndDialogue()
     {
-        dialogueCanvas.SetActive(false);
+        dialogueBox.SetActive(false);
         isDialogueActive = false;
     }
 
