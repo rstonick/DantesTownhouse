@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &49263665 stripped
@@ -364,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &139781243 stripped
@@ -528,6 +536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &183015499 stripped
@@ -589,6 +601,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -654,6 +670,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -785,7 +805,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: speed
-      value: 180
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
+      propertyPath: maxHeight
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1667248370594977311, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: m_RootOrder
@@ -855,7 +879,7 @@ GameObject:
   - component: {fileID: 362612934}
   m_Layer: 0
   m_Name: FoundationPlaneLocked
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1166,6 +1190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!1001 &504279836
@@ -1222,6 +1250,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -1285,6 +1317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &554453511 stripped
@@ -1346,6 +1382,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -1413,6 +1453,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -1570,6 +1614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &709223864 stripped
@@ -1708,6 +1756,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -1884,6 +1936,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: speed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
+      propertyPath: maxHeight
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1667248370594977311, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
@@ -2116,6 +2172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!1001 &857867959
@@ -2172,6 +2232,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -2320,6 +2384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!1 &894090086
@@ -2413,6 +2481,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -2891,6 +2963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1093327345 stripped
@@ -2994,6 +3070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1296442957 stripped
@@ -3056,6 +3136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!1001 &1362832124
@@ -3112,6 +3196,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -3243,6 +3331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1507163762 stripped
@@ -3305,6 +3397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1591032057 stripped
@@ -3366,6 +3462,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -3654,6 +3754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1756922240 stripped
@@ -3715,6 +3819,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -3845,6 +3953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1861386908 stripped
@@ -3906,6 +4018,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -4006,6 +4122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!4 &1947716513 stripped
@@ -4072,6 +4192,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
@@ -4244,6 +4368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTile1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
 --- !u!1 &2053601711
@@ -4352,7 +4480,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: speed
-      value: 40
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
+      propertyPath: maxHeight
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1667248370594977311, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: m_RootOrder
@@ -4414,6 +4546,10 @@ PrefabInstance:
     - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: speed
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 526794190, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
+      propertyPath: maxHeight
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1667248370594977311, guid: 762314ef7cf804e949c8f8ab63b2d960, type: 3}
       propertyPath: m_RootOrder
@@ -4658,6 +4794,10 @@ PrefabInstance:
     - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
       propertyPath: m_Name
       value: FloorTile1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372489389721508117, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b951f5ec21804bc49d69bf22b79e702, type: 3}
