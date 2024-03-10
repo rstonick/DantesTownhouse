@@ -131,8 +131,8 @@ public class RootMotionControlScript : MonoBehaviour
                 //switch turn around if going backwards
 
                 rbody.MovePosition(rbody.position + transform.forward * inputForward * Time.deltaTime * 5f);
-                rbody.MovePosition(rbody.position + transform.right * inputTurn * Time.deltaTime * 5f);
-                rbody.MoveRotation(rbody.rotation * Quaternion.AngleAxis(inputTurn * Time.deltaTime * 100f, Vector3.up));
+                rbody.MovePosition(rbody.position + transform.right * inputTurn * Time.deltaTime * 8f);
+                rbody.MoveRotation(rbody.rotation * Quaternion.AngleAxis(inputTurn * Time.deltaTime * 150f, Vector3.up));
             }
 
         }
@@ -208,7 +208,7 @@ public class RootMotionControlScript : MonoBehaviour
                 Vector3 velocity = anim.deltaPosition;
                 velocity.y = ySpeed * Time.deltaTime;
 
-                rbody.velocity = new Vector3(0,5,0);
+                //rbody.velocity = new Vector3(0,10,0);
 
                 rbody.AddForce(new Vector3(0, 5, 0) * jumpForce, ForceMode.Impulse);
                 _jumping = true;
