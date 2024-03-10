@@ -6,7 +6,6 @@ public class DialogueTrigger : MonoBehaviour
 {
     [TextArea(3, 10)]
     public string dialogueContent = "Orbs are $40 each to buy. You can sell them to me for $20 each.";
-    private bool isPlayerNear = false;
 
     void OnTriggerEnter(Collider other)
     {
