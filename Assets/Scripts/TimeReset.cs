@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TimeReset : MonoBehaviour
 {
-    public float timeLimit = 180f;
+    public float timeLimit = 120f;
     private float currentTime;
     public TextMeshProUGUI timeText;
 

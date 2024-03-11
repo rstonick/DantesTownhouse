@@ -5,7 +5,7 @@ using TMPro;
 
 public class CoinCollector : MonoBehaviour
 {
-    public int count = 0;
+    public float count = 0f;
     public TextMeshProUGUI countText;
     public string tableTag;
 
@@ -52,20 +52,33 @@ public class CoinCollector : MonoBehaviour
                 {
                     if (tableTag == "Table1")
                     {
-                        count *= lowRewardMultiplier;
+                        ApplyReward(lowRiskChance, lowRewardMultiplier);
                     }
                     else if (tableTag == "Table2")
                     {
-                        count *= mediumRewardMultiplier;
+                        ApplyReward(mediumRiskChance, mediumRewardMultiplier);
                     }
                     else if (tableTag == "Table3")
                     {
-                        count *= highRewardMultiplier;
+                        ApplyReward(highRiskChance, highRewardMultiplier);
                     }
                     SetCountText();
                 }
             }
 
+        }
+    }
+
+    void ApplyReward(float riskChance, int rewardMultiplier)
+    {
+        float randomValue = Random.value;
+        if (randomValue <= riskChance)
+        {
+            count *= (1 - riskChance);
+        }
+        else
+        {
+            count *= rewardMultiplier;
         }
     }
 }
