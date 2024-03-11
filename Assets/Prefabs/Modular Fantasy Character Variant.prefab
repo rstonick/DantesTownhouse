@@ -8680,6 +8680,7 @@ GameObject:
   - component: {fileID: 3243576082355924859}
   - component: {fileID: 8182935275802734151}
   - component: {fileID: 1702101234846708102}
+  - component: {fileID: 5013282192509045807}
   - component: {fileID: 1562556871909113108}
   - component: {fileID: 3632006536671386591}
   - component: {fileID: 5291411615939232193}
@@ -8772,6 +8773,19 @@ MonoBehaviour:
   InputMapToCircular: 1
   forwardInputFilter: 5
   turnInputFilter: 5
+--- !u!114 &5013282192509045807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489889323528056850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908abc464517a1d4aba552891961f242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitTrap: 0
 --- !u!114 &1562556871909113108
 MonoBehaviour:
   m_ObjectHideFlags: 0

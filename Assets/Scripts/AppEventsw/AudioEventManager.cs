@@ -8,16 +8,15 @@ public class AudioEventManager : MonoBehaviour
 
     public EventSound3D eventSound3DPrefab;
 
-    public AudioClip minionDeathAudio;
-    public AudioClip minionOuchAudio;
-    public AudioClip minionSpawnAudio;
     public AudioClip[] footstepAudio;
     public AudioClip playerLandsAudio;
     public AudioClip jumpAudio;
+    public AudioClip trapAudio;
 
     private UnityAction<Vector3, float> playerLandsEventListener;
     private UnityAction<Vector3> footstepEventListener;
     private UnityAction<Vector3> jumpEventListener;
+    private UnityAction<Vector3> trapEventListener;
 
 
     void Awake()
@@ -26,6 +25,7 @@ public class AudioEventManager : MonoBehaviour
         playerLandsEventListener = new UnityAction<Vector3, float>(playerLandsEventHandler);
         footstepEventListener = new UnityAction<Vector3>(footstepEventHandler);
         jumpEventListener = new UnityAction<Vector3>(jumpEventHandler);
+        trapEventListener = new UnityAction<Vector3>(trapEventHandler);
     }
 
 
@@ -43,6 +43,7 @@ public class AudioEventManager : MonoBehaviour
         EventManager.StartListening<PlayerLandsEvent, Vector3, float>(playerLandsEventListener);
         EventManager.StartListening<FootstepEvent, Vector3>(footstepEventListener);
         EventManager.StartListening<JumpEvent, Vector3>(jumpEventListener);
+        EventManager.StartListening<TrapEvent, Vector3>(trapEventListener);
     }
 
     void OnDisable()
@@ -50,6 +51,7 @@ public class AudioEventManager : MonoBehaviour
         EventManager.StopListening<PlayerLandsEvent, Vector3, float>(playerLandsEventListener);
         EventManager.StopListening<FootstepEvent, Vector3>(footstepEventListener);
         EventManager.StopListening<JumpEvent, Vector3>(jumpEventListener);
+        EventManager.StopListening<TrapEvent, Vector3>(trapEventListener);
     }
 
 
@@ -103,11 +105,31 @@ public class AudioEventManager : MonoBehaviour
 
         if (eventSound3DPrefab)
         {
-            Debug.Log("event fired");
+
             EventSound3D snd = Instantiate(eventSound3DPrefab, pos, Quaternion.identity, null);
 
 
             snd.audioSrc.clip = this.footstepAudio[Random.Range(0, this.footstepAudio.Length)];
+
+            snd.audioSrc.minDistance = 5f;
+            snd.audioSrc.maxDistance = 100f;
+
+            snd.audioSrc.Play();
+        }
+
+
+    }
+
+    void trapEventHandler(Vector3 pos)
+    {
+
+        if (eventSound3DPrefab)
+        {
+
+            EventSound3D snd = Instantiate(eventSound3DPrefab, pos, Quaternion.identity, null);
+
+
+            snd.audioSrc.clip = this.trapAudio;
 
             snd.audioSrc.minDistance = 5f;
             snd.audioSrc.maxDistance = 100f;
