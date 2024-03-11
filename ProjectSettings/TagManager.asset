@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
+  - Table1
+  - Table2
+  - Table3
   layers:
   - Default
   - TransparentFX

@@ -36,6 +36,6 @@ public class TimeReset : MonoBehaviour
 
     public void SetTimeText()
     {
-        timeText.text = "Time: " + currentTime.ToString("0");
+        timeText.text = "Time: " + currentTime.ToString("0") + "s";
     }
 }

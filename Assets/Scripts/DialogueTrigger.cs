@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [TextArea(3, 10)]
-    public string dialogueContent = "Orbs are $40 each to buy. You can sell them to me for $20 each.";
-
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Table1"))
         {
             if (DialogueManager.instance != null) {
-                DialogueManager.instance.StartDialogue(dialogueContent);
+                DialogueManager.instance.StartDialogue("Risk of 20% loss. Reward is 1:1. Press Enter to invest.");
+            }
+        } else if (other.CompareTag("Table2"))
+        {
+            if (DialogueManager.instance != null) {
+                DialogueManager.instance.StartDialogue("Risk of 50% loss. Reward is 2:1. Press Enter to invest.");
+            }
+        } else if (other.CompareTag("Table3"))
+        {
+            if (DialogueManager.instance != null) {
+                DialogueManager.instance.StartDialogue("Risk of 80% loss. Reward is 5:1. Press Enter to invest.");
             }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Table1") || other.CompareTag("Table2") || other.CompareTag("Table3"))
         {
             if (DialogueManager.instance != null)
             {
