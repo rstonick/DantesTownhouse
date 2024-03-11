@@ -13,7 +13,7 @@ public class AICharacter : MonoBehaviour
 
     private float chaseTimer = 0f;
     private const float MAX_CHASE_TIME = 10f;
-    private const float ROAMING_RADIUS = 10f; // Adjust as needed
+    private const float ROAMING_RADIUS = 10f;
     private const float detectionRange = 15f;
     private const float lostPlayerRange = 20f;
 
@@ -53,7 +53,7 @@ public class AICharacter : MonoBehaviour
             print("Picking new target");
         }
 
-        // Add logic to switch to Chasing state if the player is detected
+        // logic to switch to Chasing state if the player is detected
         if (Vector3.Distance(transform.position, playerTransform.position) < detectionRange)
         {
              SwitchState(AIState.Chasing);
