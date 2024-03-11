@@ -33,7 +33,7 @@ public class RootMotionControlScript : MonoBehaviour
     public float animationSpeed = 1f;
     public float rootMovementSpeed = 1f;
     public float rootTurnSpeed = 1f;
-    public float jumpForce = 2f;
+    public float jumpForce = 200f;
     private float originalStepOffset;
    
 
