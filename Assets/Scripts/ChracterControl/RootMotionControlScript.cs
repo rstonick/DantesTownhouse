@@ -187,13 +187,11 @@ public class RootMotionControlScript : MonoBehaviour
 
             }
         }
-        Debug.Log(anim.applyRootMotion);
 
 
 
         if (isGrounded)
         {
-            Debug.Log(groundContactCount);
             ySpeed = -0.5f;
             anim.SetBool("isGrounded", true);
             isGrounded = true;
@@ -268,7 +266,6 @@ public class RootMotionControlScript : MonoBehaviour
 
         if (!isGrounded) anim.applyRootMotion = false;
         else anim.applyRootMotion = true;
-        Debug.Log(anim.applyRootMotion);
         //if (rbody.velocity.y < 0)
         //{
         //    Debug.Log("velocity1");
