@@ -94,11 +94,11 @@ public class RootMotionControlScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-		//example of how to get access to certain limbs
-        leftFoot = this.transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot");
-        rightFoot = this.transform.Find("mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot");
-        if (leftFoot == null || rightFoot == null)
-            Debug.Log("One of the feet could not be found");
+		////example of how to get access to certain limbs
+  //      leftFoot = this.transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot");
+  //      rightFoot = this.transform.Find("mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot");
+  //      if (leftFoot == null || rightFoot == null)
+  //          Debug.Log("One of the feet could not be found");
             
     }
 
@@ -153,40 +153,40 @@ public class RootMotionControlScript : MonoBehaviour
         //work
         bool isGrounded = IsGrounded || CharacterCommon.CheckGroundNear(this.transform.position, jumpableGroundNormalMaxAngle, 0.1f, 1f, out closeToJumpableGround);
 
-        float buttonDistance = float.MaxValue;
-        float buttonAngleDegrees = float.MaxValue;
+        //float buttonDistance = float.MaxValue;
+        //float buttonAngleDegrees = float.MaxValue;
         anim.speed = animationSpeed;
-        if (buttonPressStandingSpot != null)
-        {
-            buttonDistance = Vector3.Distance(transform.position, buttonPressStandingSpot.transform.position);
-            buttonAngleDegrees = Quaternion.Angle(transform.rotation, buttonPressStandingSpot.transform.rotation);
-        }
+        //if (buttonPressStandingSpot != null)
+        //{
+        //    buttonDistance = Vector3.Distance(transform.position, buttonPressStandingSpot.transform.position);
+        //    buttonAngleDegrees = Quaternion.Angle(transform.rotation, buttonPressStandingSpot.transform.rotation);
+        //}
 
-        if(_inputActionFired)
-        {
-            _inputActionFired = false; // clear the input event that came from Update()
+        //if(_inputActionFired)
+        //{
+        //    _inputActionFired = false; // clear the input event that came from Update()
 
-            Debug.Log("Action pressed");
+        //    Debug.Log("Action pressed");
 
-            if (buttonDistance <= buttonCloseEnoughForMatchDistance)
-            {
-                if(buttonDistance <= buttonCloseEnoughForPressDistance &&
-                    buttonAngleDegrees <= buttonCloseEnoughForPressAngleDegrees)
-                {
-                    Debug.Log("Button press initiated");
+        //    if (buttonDistance <= buttonCloseEnoughForMatchDistance)
+        //    {
+        //        if(buttonDistance <= buttonCloseEnoughForPressDistance &&
+        //            buttonAngleDegrees <= buttonCloseEnoughForPressAngleDegrees)
+        //        {
+        //            Debug.Log("Button press initiated");
 
-                    doButtonPress = true;
+        //            doButtonPress = true;
                     
-                }
-                else
-                {
-                    // TODO UNCOMMENT THESE LINES FOR TARGET MATCHING
-                    Debug.Log("match to button initiated");
-                    doMatchToButtonPress = true;
-                }
+        //        }
+        //        else
+        //        {
+        //            // TODO UNCOMMENT THESE LINES FOR TARGET MATCHING
+        //            Debug.Log("match to button initiated");
+        //            doMatchToButtonPress = true;
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
 
 
@@ -202,7 +202,6 @@ public class RootMotionControlScript : MonoBehaviour
             if (_inputJumpFired)
             {
                 ySpeed = jumpForce;
-                Debug.Log(transform.forward);
                 Vector3 velocity = anim.deltaPosition;
                 velocity.y = ySpeed * Time.deltaTime;
 
