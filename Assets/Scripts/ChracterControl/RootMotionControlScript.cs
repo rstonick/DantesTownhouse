@@ -11,9 +11,13 @@ using UnityEditor;
 [RequireComponent(typeof(CharacterInputController))]
 public class RootMotionControlScript : MonoBehaviour
 {
+
+    [SerializeField]
+    private float jumpRegTime;
     private Animator anim;	
     private Rigidbody rbody;
     private CharacterInputController cinput;
+    private CharacterController characterController;
 
     private Transform leftFoot;
     private Transform rightFoot;
@@ -29,7 +33,9 @@ public class RootMotionControlScript : MonoBehaviour
     public float animationSpeed = 1f;
     public float rootMovementSpeed = 1f;
     public float rootTurnSpeed = 1f;
-    public float jumpForce = 2f;
+    public float jumpForce = 200f;
+    private float originalStepOffset;
+   
 
 
     // classic input system only polls in Update()
@@ -41,6 +47,9 @@ public class RootMotionControlScript : MonoBehaviour
     bool _jumpingGrounded = false;
 
     private float _gravityValue = 9.81f;
+    private float lastGroundedTime;
+    private float jumpButtonPressedTime;
+    private float ySpeed;
 
     // ...however constant input measures like axes can just have most recent value
     // cached.
@@ -85,12 +94,11 @@ public class RootMotionControlScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-		//example of how to get access to certain limbs
-        leftFoot = this.transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot");
-        rightFoot = this.transform.Find("mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot");
-
-        if (leftFoot == null || rightFoot == null)
-            Debug.Log("One of the feet could not be found");
+		////example of how to get access to certain limbs
+  //      leftFoot = this.transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot");
+  //      rightFoot = this.transform.Find("mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot");
+  //      if (leftFoot == null || rightFoot == null)
+  //          Debug.Log("One of the feet could not be found");
             
     }
 
@@ -107,16 +115,37 @@ public class RootMotionControlScript : MonoBehaviour
             // This makes certain that the action is handled!
             _inputActionFired = _inputActionFired || cinput.Action;
             _inputJumpFired = _inputJumpFired || cinput.Jump;
-        }
-    }
+            bool isGrounded = IsGrounded || CharacterCommon.CheckGroundNear(this.transform.position, jumpableGroundNormalMaxAngle, 0.1f, 1f, out closeToJumpableGround);
 
+            if (!anim.applyRootMotion)
+            {
+                float inputForward = 0f;
+                float inputTurn = 0f;
+
+                if (cinput.enabled)
+                {
+                    inputForward = cinput.Forward;
+                    inputTurn = cinput.Turn;
+                }
+
+                //switch turn around if going backwards
+
+                rbody.MovePosition(rbody.position + transform.forward * inputForward * Time.deltaTime * 5f);
+                rbody.MovePosition(rbody.position + transform.right * inputTurn * Time.deltaTime * 8f);
+                rbody.MoveRotation(rbody.rotation * Quaternion.AngleAxis(inputTurn * Time.deltaTime * 150f, Vector3.up));
+            }
+
+        }
+
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+    }
 
     void FixedUpdate()
     {
 
         bool doButtonPress = false;
         bool doMatchToButtonPress = false;
-
+        Vector3 movementDirection = new Vector3(_inputTurn, 0, _inputForward);
         //onCollisionXXX() doesn't always work for checking if the character is grounded from a playability perspective
         //Uneven terrain can cause the player to become technically airborne, but so close the player thinks they're touching ground.
         //Therefore, an additional raycast approach is used to check for close ground.
@@ -124,101 +153,130 @@ public class RootMotionControlScript : MonoBehaviour
         //work
         bool isGrounded = IsGrounded || CharacterCommon.CheckGroundNear(this.transform.position, jumpableGroundNormalMaxAngle, 0.1f, 1f, out closeToJumpableGround);
 
-        float buttonDistance = float.MaxValue;
-        float buttonAngleDegrees = float.MaxValue;
+        //float buttonDistance = float.MaxValue;
+        //float buttonAngleDegrees = float.MaxValue;
         anim.speed = animationSpeed;
-        if (buttonPressStandingSpot != null)
-        {
-            buttonDistance = Vector3.Distance(transform.position, buttonPressStandingSpot.transform.position);
-            buttonAngleDegrees = Quaternion.Angle(transform.rotation, buttonPressStandingSpot.transform.rotation);
-        }
+        //if (buttonPressStandingSpot != null)
+        //{
+        //    buttonDistance = Vector3.Distance(transform.position, buttonPressStandingSpot.transform.position);
+        //    buttonAngleDegrees = Quaternion.Angle(transform.rotation, buttonPressStandingSpot.transform.rotation);
+        //}
 
-        if(_inputActionFired)
-        {
-            _inputActionFired = false; // clear the input event that came from Update()
+        //if(_inputActionFired)
+        //{
+        //    _inputActionFired = false; // clear the input event that came from Update()
 
-            Debug.Log("Action pressed");
+        //    Debug.Log("Action pressed");
 
-            if (buttonDistance <= buttonCloseEnoughForMatchDistance)
-            {
-                if(buttonDistance <= buttonCloseEnoughForPressDistance &&
-                    buttonAngleDegrees <= buttonCloseEnoughForPressAngleDegrees)
-                {
-                    Debug.Log("Button press initiated");
+        //    if (buttonDistance <= buttonCloseEnoughForMatchDistance)
+        //    {
+        //        if(buttonDistance <= buttonCloseEnoughForPressDistance &&
+        //            buttonAngleDegrees <= buttonCloseEnoughForPressAngleDegrees)
+        //        {
+        //            Debug.Log("Button press initiated");
 
-                    doButtonPress = true;
+        //            doButtonPress = true;
                     
-                }
-                else
-                {
-                    // TODO UNCOMMENT THESE LINES FOR TARGET MATCHING
-                    Debug.Log("match to button initiated");
-                    doMatchToButtonPress = true;
-                }
+        //        }
+        //        else
+        //        {
+        //            // TODO UNCOMMENT THESE LINES FOR TARGET MATCHING
+        //            Debug.Log("match to button initiated");
+        //            doMatchToButtonPress = true;
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
-        if (_inputJumpFired)
+
+
+        if (isGrounded)
         {
+            ySpeed = -0.5f;
+            anim.SetBool("isGrounded", true);
+            isGrounded = true;
+            _jumping = false;
+            anim.SetBool("JumpPressed", false);
+            anim.SetBool("isFalling", false);
             
-            if (isGrounded)
+            if (_inputJumpFired)
             {
-                Vector3 horizontalVelocity = new Vector3(_inputForward, 0f, 0f);
-                anim.SetFloat("velx", 4f);
-                anim.SetFloat("vely", 4f);
-                Debug.Log(transform.forward);
-                rbody.velocity = new Vector3(_inputForward*2, 5, 0);
-                rbody.AddForce(rbody.velocity * jumpForce, ForceMode.Impulse);
-                isGrounded = false;
+                ySpeed = jumpForce;
+                Vector3 velocity = anim.deltaPosition;
+                velocity.y = ySpeed * Time.deltaTime;
+
+                //rbody.velocity = new Vector3(0,10,0);
+
+                rbody.AddForce(new Vector3(0, 5, 0) * jumpForce, ForceMode.Impulse);
+                _jumping = true;
                 anim.SetBool("JumpPressed", true);
+                
                 _inputJumpFired = false;
                 _jumping = true;
-                
+
             }
 
         }
-
-        if (_jumping && !isGrounded)
+        else
         {
-            _jumpingGrounded = true;
-            _jumping = false;
-            Debug.Log("up");
-            
-        }
+            anim.SetBool("isGrounded", false);
+            isGrounded = false;
 
-        if (_jumpingGrounded && isGrounded)
-        {
-            anim.SetBool("JumpPressed", false);
-            _jumpingGrounded = false;
-            Debug.Log("down");
+            if ((_jumping && ySpeed < 0) || ySpeed < -2)
+            {
+                anim.SetBool("isFalling", true);
+            }
         }
 
         // get info about current animation
-        var animState = anim.GetCurrentAnimatorStateInfo(0);
+        //var animState = anim.GetCurrentAnimatorStateInfo(0);
 
-        // If the transition to button press has been initiated then we want
-        // to correct the character position to the correct place
+        //// If the transition to button press has been initiated then we want
+        //// to correct the character position to the correct place
 
-        if (animState.IsName("MatchToButtonPress")
-            && !anim.IsInTransition(0) && !anim.isMatchingTarget)
+        //if (animState.IsName("MatchToButtonPress")
+        //    && !anim.IsInTransition(0) && !anim.isMatchingTarget)
+        //{
+        //    if (buttonPressStandingSpot != null)
+        //    {
+        //        Debug.Log("Target matching correction started");
+
+        //        initalMatchTargetsAnimTime = animState.normalizedTime;
+
+        //        var t = buttonPressStandingSpot.transform;
+        //        anim.MatchTarget(t.position, t.rotation, AvatarTarget.Root,
+        //            new MatchTargetWeightMask(new Vector3(1f, 0f, 1f),
+        //            1f),
+        //            initalMatchTargetsAnimTime,
+        //            exitMatchTargetsAnimTime);
+        //    }
+        //}
+
+        if (movementDirection != Vector3.zero)
         {
-            if (buttonPressStandingSpot != null)
-            {
-                Debug.Log("Target matching correction started");
-
-                initalMatchTargetsAnimTime = animState.normalizedTime;
-
-                var t = buttonPressStandingSpot.transform;
-                anim.MatchTarget(t.position, t.rotation, AvatarTarget.Root,
-                    new MatchTargetWeightMask(new Vector3(1f, 0f, 1f),
-                    1f),
-                    initalMatchTargetsAnimTime,
-                    exitMatchTargetsAnimTime);
-            }
+            
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
+            
         }
 
-
+        if (!isGrounded) anim.applyRootMotion = false;
+        else anim.applyRootMotion = true;
+        //if (rbody.velocity.y < 0)
+        //{
+        //    Debug.Log("velocity1");
+        //    Debug.Log(anim.applyRootMotion);
+        //    rbody.velocity += Vector3.up * Physics.gravity.y * (250f - 1) * Time.deltaTime;
+        //}
+        //else if (rbody.velocity.y > 0 && !_inputJumpFired)
+        //{
+        //    Debug.Log("velocity2");
+        //    Debug.Log(anim.applyRootMotion);
+        //    rbody.velocity += Vector3.up * Physics.gravity.y * (200f - 1) * Time.deltaTime;
+        //}
         anim.SetFloat("velx", _inputTurn);
         anim.SetFloat("vely", _inputForward);
         
@@ -254,37 +312,6 @@ public class RootMotionControlScript : MonoBehaviour
 
     }
 
-    void OnAnimatorMove()
-    {
-
-        Vector3 newRootPosition;
-        Quaternion newRootRotation;
-
-        bool isGrounded = IsGrounded || CharacterCommon.CheckGroundNear(this.transform.position, jumpableGroundNormalMaxAngle, 0.1f, 1f, out closeToJumpableGround);
-        
-        if (isGrounded)
-        {
-         	//use root motion as is if on the ground		
-            newRootPosition = anim.rootPosition;        
-        }
-        else
-        {
-            //Simple trick to keep model from climbing other rigidbodies that aren't the ground
-            newRootPosition = new Vector3(anim.rootPosition.x, this.transform.position.y, anim.rootPosition.z);
-        }
-
-        //use rotational root motion as is
-        newRootRotation = anim.rootRotation;
-
-        //TODO Here, you could scale the difference in position and rotation to make the character go faster or slower
-        newRootPosition = Vector3.LerpUnclamped(this.transform.position, newRootPosition, rootMovementSpeed);
-        // old way
-        //this.transform.position = newRootPosition;
-        //this.transform.rotation = newRootRotation;
-
-        rbody.MovePosition(newRootPosition);
-        rbody.MoveRotation(newRootRotation);
-    }
 
     private void OnAnimatorIK(int layerIndex)
     {
